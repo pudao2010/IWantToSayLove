@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="isAnimateOn" format="boolean" />
+    <attr name="loveColor" format="color" />
+
+    <declare-styleable name="LoveView">
+        <attr name="isAnimateOn" />
+        <attr name="loveColor" />
+    </declare-styleable>
+
+
+    <declare-styleable name="ItemLayout">
+        <attr name="leftText" format="string" />
+        <attr name="rightText" format="string" />
+        <attr name="rightIconVisible" format="enum">
+            <enum name="visible" value="0" />
+            <enum name="invisible" value="4" />
+            <enum name="gone" value="8" />
+        </attr>
+
+        <attr name="rightLayoutVisible" format="enum">
+            <enum name="visible" value="0" />
+            <enum name="invisible" value="4" />
+            <enum name="gone" value="8" />
+        </attr>
+        <attr name="topLineVisible" format="enum">
+            <enum name="visible" value="0" />
+            <enum name="invisible" value="4" />
+            <enum name="gone" value="8" />
+        </attr>
+        <attr name="bottomLineVisible" format="enum">
+            <enum name="visible" value="0" />
+            <enum name="invisible" value="4" />
+            <enum name="gone" value="8" />
+        </attr>
+        <attr name="leftTextColor" format="color" />
+        <attr name="leftTextSize" format="dimension" />
+        <attr name="rightTextColor" format="color" />
+        <attr name="rightTextSize" format="dimension" />
+        <attr name="leftIconDrawable" format="reference" />
+        <attr name="rightIconDrawable" format="reference" />
+        <attr name="bottomLineColor" format="color" />
+        <attr name="leftMargin" format="dimension" />
+        <attr name="rightMargin" format="dimension" />
+        <attr name="minHeight" format="dimension" />
+    </declare-styleable>
+
+
+    <declare-styleable name="PhotoAndVideoLayout">
+        <attr name="isShowUpload" format="boolean" />
+        <attr name="isShowLineView" format="boolean" />
+        <attr name="uploadType" format="enum">
+            <enum name="photo" value="1" />
+            <enum name="video" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="ProductItemView">
+        <attr name="limit_time" format="string" />
+        <attr name="price" format="string" />
+        <attr name="average_per_day" format="string"/>
+        <attr name="price_color" format="reference"/>
+        <attr name="is_show_averabe" format="boolean"/>
+        <attr name="purchase_btn_bg" format="reference"/>
+        <attr name="purchase_btn_text_color" format="reference"/>
+        <attr name="purchase_btn_text" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="PrivilegeItemView">
+        <attr name="left_icon" format="reference" />
+        <attr name="title" format="string" />
+        <attr name="tips" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="EmptyView">
+        <attr name="pic" format="reference" />
+        <attr name="text1" format="string" />
+        <attr name="text2" format="string"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="AbstractWheelView">
+        <attr name="visibleItems" format="integer" />
+        <attr name="isAllVisible" format="boolean" />
+        <attr name="itemOffsetPercent" format="integer" />
+        <attr name="itemsPadding" format="dimension" />
+        <attr name="selectionDividerDimmedAlpha" format="integer" />
+        <attr name="selectionDividerActiveAlpha" format="integer" />
+        <attr name="selectionDivider" format="reference" />
+        <attr name="itemsDimmedAlpha" format="integer" />
+        <attr name="isCyclic" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="WheelHorizontalView">
+        <attr name="selectionDividerWidth" format="dimension" />
+    </declare-styleable>
+
+    <attr name="abstractWheelViewStyle" format="reference" />
+
+    <declare-styleable name="VideoTopicLayout">
+        <attr name="isShowArrow" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="ExpandTextView">
+        <attr name="expandMaxLine" format="integer" />
+        <attr name="expandTextColor" format="color" />
+        <attr name="expandTextSize" format="dimension" />
+        <attr name="expandTextPadding" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="RoundImageView">
+        <attr name="leftTopRadius" format="dimension|reference"/>
+        <attr name="rightTopRadius" format="dimension|reference"/>
+        <attr name="rightBottomRadius" format="dimension|reference"/>
+        <attr name="leftBottomRadius" format="dimension|reference"/>
+        <attr name="borderWidthshiming" format="dimension|reference"/>
+        <attr name="borderColorshiming" format="color|reference"/>
+    </declare-styleable>
+
+</resources>

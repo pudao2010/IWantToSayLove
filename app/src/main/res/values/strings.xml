@@ -1,0 +1,396 @@
+<resources>
+    <string name="app_name">SayLove</string>
+
+    <!-- 应用升级 -->
+    <string name="version_update_check">检查更新</string>
+    <string name="version_update_newest">已经是最新版本！</string>
+    <string name="version_update_dialog_title">版本升级</string>
+    <string name="version_update_dialog_download_background">后台下载</string>
+    <string name="version_update_dialog_btn_now">马上升级</string>
+    <string name="version_update_dialog_btn_install">安装</string>
+    <string name="version_update_dialog_btn_later">以后再说</string>
+    <string name="version_update_dialog_btn_exit">退出</string>
+
+    <!-- 支付 -->
+    <string name="create_order_fail">抱歉，生成订单失败！</string>
+    <string name="no_network_connected">网络好像出问题了哦</string>
+    <string name="exception_pay">网络异常！</string>
+    <string name="wx_uninstalled_tips">仅支持已安装微信用户支付。请更换方式或安装微信！</string>
+    <string name="wx_api_unsupport_tips">您的微信版本过低，无法支付，请更换方式或升级微信！</string>
+    <string name="sucess_pay">支付成功！</string>
+    <string name="activity_pay_title">加入会员</string>
+    <string name="activity_pay_limit_time_of_12_month">12个月</string>
+    <string name="activity_pay_limit_time_of_3_month">3个月</string>
+    <string name="activity_pay_limit_time_of_1_month">1个月</string>
+    <string name="activity_pay_validity_period">会员有效期至:</string>
+    <string name="dialog_pay_zhi_fu_bao">支付宝支付</string>
+    <string name="dialog_pay_we_chat">微信支付</string>
+    <string name="credit_msg">实名认证费用:</string>
+    <string name="purchase_more">续费</string>
+    <string name="purchase_text">购买</string>
+
+    <!--系统消息-->
+    <string name="system_title">SayLove小助手</string>
+
+
+    <!--心动页-->
+    <string name="fragment_heart_beat_tab_1">对我心动</string>
+    <string name="fragment_heart_beat_tab_2">我的心动记录</string>
+    <string name="fragment_heart_beat_adapter_item_praise_text">觉得你很棒，对你心动了！</string>
+    <string name="fragment_heart_beat_adapter_item_praise_my_text">你觉得%1$s不错，对%2$s心动了</string>
+    <string name="fragment_heart_beat_adapter_item_praise_video_text">赞了你的SayLove视频问答</string>//
+    <string name="fragment_heart_beat_adapter_item_praise_video_my_text">你赞了%s的SayLove视频问答</string>
+    <string name="fragment_heart_beat_tips_view_text">共有%s个人对你感兴趣\n加入会员看看他们是谁吧~</string>
+    <string name="fragment_heart_beat_to_me_tips">每天免费展示一位对你感兴趣的人：</string>
+    <string name="fragment_heart_beat_empty_text1">没有对你心动的人？</string>
+    <string name="fragment_heart_beat_empty_text2">赶紧完善个人信息，提高个人魅力吧！</string>
+    <string name="fragment_heart_beat_empty_text3">你还没有对别人心动过哟~</string>
+    <string name="fragment_heart_beat_empty_text4">怦然心动，别错过任何一段缘分！</string>
+    <string name="fragment_heart_beat_purchase_vip_title">只有会员才可以查看心动哦</string>
+    <string name="fragment_heart_beat_purchase_vip_tips">开通会员，看看谁对你感兴趣</string>
+
+    <!--访客页面-->
+    <string name="fragment_visitor_tab1">看过我的人</string>
+    <string name="fragment_visitor_tab2">我看过的人</string>
+    <string name="fragment_visitor_title">访客</string>
+    <string name="fragment_visitor_empty_data_tips_1">你还没有看过任何人呢~</string>
+    <string name="fragment_visitor_empty_data_tips_2">敞开心扉，我们的用户资料都真实有效！</string>
+    <string name="fragment_visitor_empty_data_tips_3">还没有人来看过你哦~</string>
+    <string name="fragment_visitor_empty_data_tips_4">赶紧完善个人信息，提高个人魅力吧！</string>
+    <string name="fragment_visitor_purchase_vip_title">只有会员才可以查看访客哦</string>
+    <string name="fragment_visitor_purchase_vip_tips">开通会员，查看所有访客</string>
+
+
+    <!-- 选择框标题 -->
+    <string name="sex">性别</string>
+    <string name="age">年龄</string>
+    <string name="birthday">生日</string>
+    <string name="select_nothing">不限</string>
+    <string name="please_select">请选择</string>
+    <string name="height">身高</string>
+    <string name="education">学历</string>
+    <string name="marital_status">婚姻状况</string>
+    <string name="id_authentication">身份证认证</string>
+    <string name="children">有无孩子</string>
+    <string name="weight">体型</string>
+    <string name="job">职业</string>
+    <string name="native_place">籍贯</string>
+    <string name="house">住房状况</string>
+    <string name="car">买车状况</string>
+    <string name="zodiac">星座</string>
+    <string name="chinese_zodiac">生肖</string>
+    <string name="faith">信仰</string>
+    <string name="nation">民族</string>
+    <string name="login_status">登录情况</string>
+    <string name="avatar">形象照</string>
+    <string name="work_city">工作地区</string>
+    <string name="salary_month">月收入</string>
+    <string name="nickname">昵称</string>
+    <string name="no_limit">不限</string>
+    <string name="register_phone_tips">请输入正确的手机号</string>
+    <string name="register_password_tips">密码为6-20为数字或字母</string>
+    <string name="login">登录</string>
+    <string name="regist">注册</string>
+    <string name="welcom">欢迎加入SayLove！</string>
+    <string name="andsoon">完善你的个人资料后，我们会将你推荐给合适的人</string>
+    <string name="cm">cm</string>
+    <string name="year">年</string>
+    <string name="register_protocol_text">注册即表示您同意SayLove的服务协议及隐私政策</string>
+
+    <!--消息页-->
+    <string name="fragment_msg_of_heart_beat_title">心动</string>
+    <string name="fragment_msg_of_heart_beat_tips">看看对你感兴趣的人吧</string>
+    <string name="fragment_msg_of_visitor_title">访客</string>
+    <string name="fragment_msg_of_visitor_tips">这些人看过你的资料哦</string>
+    <string name="no_date">没有更多了</string>
+    <string name="fragment_msg_empty_text1">还没有人给你发消息哟~</string>
+    <string name="fragment_msg_empty_text2">赶快去完善自己的信息吧，TA正在找你！</string>
+
+    <!--消息详情页-->
+    <string name="fragment_chat_detail_dialog_voice_release">松开手指，取消发送</string>
+    <string name="fragment_chat_detail_dialog_voice_record">手指上滑，取消发送</string>
+    <string name="fragment_chat_detail_dialog_voice_record_failed">说话时间太短</string>
+    <string name="fragment_chat_detail_voice_btn">按住说话</string>
+    <string name="fragment_chat_detail_input_not_empty">内容不能空</string>
+    <string name="fragment_chat_detail_no_data">没有数据了</string>
+    <string name="unknow_size">未知大小</string>
+    <string name="dialog_purchase_vip_text">成为会员，查看邮件</string>
+    <string name="dialog_purchase_vip_tips">与所有VIP会员零阻碍交流</string>
+    <string name="fragment_chat_detail_dialog_purchase_title">非会员每天只能和3个人聊天哦</string>
+    <string name="fragment_chat_detail_dialog_purchase_tips">成为会员，尽享零阻碍沟通</string>
+    <string name="fragment_chat_detail_dialog_3free_purchase_title">免费聊天体验已结束</string>
+    <string name="fragment_chat_detail_dialog_3free_purchase_tips">成为会员，尽享零阻碍沟通</string>
+    <string name="fragment_chat_detail_list_lock_item">消息已锁，加入会员，与所\n有VIP会员零阻碍交流。</string>
+    <string name="fragment_chat_detail_dialog_purchase_vip_title">成为会员，发送消息</string>
+    <string name="fragment_chat_detail_dialog_purchase_vip_tips">与所有VIP会员零阻碍沟通</string>
+
+
+    <!-- 我页面-->
+    <string name="item_pay_member">开通会员享特权</string>
+    <string name="item_verify_info">认证信息</string>
+    <string name="item_id_card_verify">身份认证</string>
+    <string name="item_education_verify">学历认证</string>
+    <string name="item_car_verify">购车认证</string>
+    <string name="item_house_verify">购房认证</string>
+    <string name="certification">认证中</string>
+    <string name="click_to_verify">点击认证</string>
+    <string name="has_verify">已认证</string>
+    <string name="not_verify">未认证</string>
+    <string name="item_introduce_myself">自我介绍</string>
+    <string name="click_to_edit">点击编辑</string>
+    <string name="item_basic_info">基本资料</string>
+    <string name="item_other_require">择偶标准</string>
+
+    <string name="verify_info">认证信息</string>
+    <string name="heart_thinking">内心独白</string>
+
+    <string name="item_require_info_title">择偶条件</string>
+
+
+    <string name="rotate">旋转</string>
+    <string name="photo_error">获取照片失败</string>
+    <string name="from_album">从相册中选择</string>
+    <string name="from_camera">拍照</string>
+    <string name="cancel">取消</string>
+
+    <string name="crop_photo_title">裁剪照片</string>
+    <string name="crop_photo_too_small">裁剪的图片太小，请重新裁剪</string>
+    <string name="crop_photo_failure">裁剪图片失败</string>
+    <string name="crop_photo_not_found">没有找到有效图片</string>
+    <string name="txt_wait">请稍等</string>
+    <string name="save">保存</string>
+
+    <!-- 编辑页面 -->
+    <string name="id">ID</string>
+    <string name="born_day">出生日期</string>
+    <string name="income">年收入</string>
+    <string name="drinking">饮酒</string>
+    <string name="smoking">吸烟</string>
+    <string name="nickname_hint">输入你的昵称</string>
+    <string name="age_unit">岁</string>
+    <string name="height_unit">cm</string>
+    <string name="user_id">用户ID</string>
+    <string name="man_text">男</string>
+    <string name="female_text">女</string>
+    <string name="graduation_school">毕业院校</string>
+    <string name="education_background">学历</string>
+    <string name="car_model">车辆品牌</string>
+    <string name="house_place">房产所在地</string>
+    <string name="education_verify_tips">请上传毕业证</string>
+    <string name="car_verify_tips">请上传行驶证</string>
+    <string name="house_verify_tips">请上传房产证</string>
+
+    <string name="example">示例</string>
+    <string name="commit">提交</string>
+
+    <string name="praise">心动</string>
+    <string name="chat">聊天</string>
+    <!--  实名认证-->
+    <string name="realname_title">身份认证</string>
+    <string name="no_network_connected_real_name">网络异常，请重新认证</string>
+    <string name="realname_content">
+        SayLove作为一个真实、严肃的婚恋平台，我们要求所\n有进入平台的用户完成身份认证，是希望给大家提供\n一个真实安全的婚恋环境。认证技术由SayLove联合\n芝麻信用提供，保证提供隐私且实时返回认证结果，\n请放心认证。
+    </string>
+    <string name="saylove_content">say
+        love致力打造100%真实的平台，通过收取\n基本的认证费用可以筛选掉大部分的虚假用户。\n身份认证结果实时返回，无需等待认证通过后，\nsay
+        love提供免费学历认证、购车认证、不再额\n外收取认证费用。
+    </string>
+    <string name="saylove_content1">
+        SayLove致力打造100%真实的平台，通过收取\n基本的认证费用可以筛选掉大部分的虚假用户。\n身份认证结果实时返回，无需等待。每成功收\n取1次认证费用，可获得5次认证机会。认证通\n过后，SayLove提供免费学历认证、购车认证、\n购房认证，不再额外收取认证费用。
+    </string>
+    <string name="head_protrait_title">设置头像及昵称</string>
+    <string name="verify_failed">审核失败</string>
+    <string name="verifying">审核中</string>
+    <string name="real_name_already_verify">身份证已经被认证了，请重新输入</string>
+    <string name="real_name_already_verify_fail">认证失败，请重新再试</string>
+    <string name="real_name_already_verify_money_title1">永久认证仅需：</string>
+    <string name="real_name_already_verify_money_title2">限时优惠价：</string>
+    <string name="real_name_already_verify_money_title3">为什么要收取认证费?</string>
+    <string name="real_name_no_name">请输入姓名！</string>
+    <string name="real_name_verify_id_wrong">身份证号码长度不正确！</string>
+    <string name="real_name_verify_id_format_wrong">身份证号码格式不正确！</string>
+    <string name="real_name_verify_name_format_wrong">姓名格式不正确！</string>
+    <string name="edittext_hint_name">
+        <font size="15">请输入真实姓名</font>
+    </string>
+    <string name="edittext_hint_id">
+        <font size="15">请正确输入18位身份证号码</font>
+    </string>
+    <string name="real_name_exit_dialog">SayLove是一个真实严肃的婚恋平台，每个会员都需要完成身份认证才能使用，你确定要放弃吗？</string>
+
+    <!--设置页面 -->
+    <string name="modify_password">修改密码</string>
+    <string name="clean_cache">清除缓存</string>
+
+    <string name="about_say_love">关于我们</string>
+
+
+    <string name="to_select">请选择</string>
+    <string name="modify_nothing">暂未修改任何内容</string>
+    <string name="save_success">保存成功</string>
+
+    <string name="contact_mail">客服邮箱:kefu@bluewhaledt.com</string>
+    <string name="contact_phone">客服电话:0755&#8211;86582712</string>
+    <string name="current_version">当前版本</string>
+
+    <string name="upload_success">上传成功</string>
+    <string name="upload_fail">上传失败</string>
+
+    <string name="setting">设置</string>
+    <string name="report">举报此用户</string>
+
+    <string name="is_not_fill">暂未填写</string>
+
+    <string name="delete">删除</string>
+    <string name="no_select_education_pic">请上传学历相关证明</string>
+    <string name="no_select_car_pic">请上传车辆相关证明</string>
+    <string name="no_select_house_pic">请上传房产相关证明</string>
+    <string name="please_fill_completion">请补充完整</string>
+
+    <string name="is_verify_detail">%s正在审核中，请等待审核</string>
+
+    <string name="is_verify">审核中</string>
+    <string name="verify_not_pass">审核不通过</string>
+    <string name="my_service">我的服务</string>
+    <string name="code_remain_tips">重新发送(%ss)</string>
+    <string name="re_send_code">重发验证码</string>
+    <!-- 上传头像和开启支付-->
+    <string name="open_member_tv1">非会员每天只能赞三次哦</string>
+    <string name="open_member_tv2">成为会员，尽享无限次心动</string>
+    <string name="up_loadpic_tv1">你的头像审核未通过</string>
+    <string name="up_loadpic_tv2">上传真实头像，得到对方回复的机会更大哦</string>
+
+    <string name="please_select_correct_range">请选择一个正确的范围</string>
+    <string name="register_verifyCode_tips">请输入正确的验证码</string>
+    <string name="reset_pwd">重置密码</string>
+    <string name="correct_phoneNum_needed">请输入正确的手机号码</string>
+    <string name="verify_code_send">验证码已发送</string>
+    <string name="mini_protocol_text">服务协议及隐私政策</string>
+    <string name="regist_successful">注册成功</string>
+
+    <!--用户资料页-->
+    <string name="fragment_third_party_praise_error_text">今天心动次数已达到上限了哦</string>
+    <string name="fragment_third_party_cancel_praise_text">取消心动成功</string>
+    <string name="fragment_third_party_praise_success">心动成功</string>
+
+
+    <!-- 推荐-->
+    <string name="recommend_no_person">没有推荐的人了哦</string>
+    <string name="recommend_show_no_view">我是有底线的</string>
+
+    <!--登录注册-->
+    <string name="saylove_protocol">SayLove服务协议</string>
+    <string name="preview">先逛逛</string>
+    <string name="reset_successful">设置成功</string>
+    <string name="please_input_phone">请输入手机号</string>
+    <string name="please_input_pwd">请输入密码</string>
+    <string name="foreget_pwd">忘记密码</string>
+    <string name="get_verify_code">获取验证码</string>
+    <string name="please_input_code">请输入验证码</string>
+    <string name="please_set_new_pwd">请设置新密码</string>
+    <string name="ok">确定</string>
+    <string name="whats_your_gender">你的性别是？</string>
+    <string name="male">男</string>
+    <string name="female">女</string>
+    <string name="where_do_you_live">你现在在哪个城市生活？</string>
+    <string name="next_step">下一步</string>
+    <string name="whats_your_age">你的年份是？</string>
+    <string name="whats_your_height">你的身高是？</string>
+    <string name="whats_your_marital_status">你的婚姻状况是？</string>
+    <string name="single">未婚</string>
+    <string name="divorced">离异</string>
+    <string name="widowed">丧偶</string>
+    <string name="how_much_is_your_incom">你的年收入是？</string>
+    <string name="below_10W">10W以下</string>
+    <string name="below_20W">10W-20W</string>
+    <string name="below_30W">20W-30W</string>
+    <string name="below_50W">30W-50W</string>
+    <string name="below_100W">50W-100W</string>
+    <string name="over_100W">100W以上</string>
+    <string name="pwd_hint_str">请设置6-20位英文或数字密码</string>
+    <string name="logout">退出登录</string>
+
+    <item name="tag_first" type="id"></item>
+    <item name="tag_second" type="id"></item>
+
+    <!--  游客-->
+    <string name="recommend_tourist">逛一逛</string>
+    <string name="recommend_tourist_no_view">还没有推荐的人噢</string>
+    <string name="recommend_tourist_try_again">不要灰心，刷新看看</string>
+    <string name="recommend_tourist_try_again_more">刷新看看</string>
+    <string name="recommend_tourist_is_net_work">请检查网络连接情况</string>
+
+    <!-- 关于我 上传头像-->
+    <string name="head_portrait_activity_no_pic">有照片的人才会被推荐哟</string>
+    <string name="head_portrait_activity_no_name">填个昵称让人记住你吧</string>
+    <string name="head_portrait_activity_wrong_name">昵称格式不正确，请重新输入</string>
+    <string name="head_portrait_activity_next_one">下一步</string>
+    <string name="head_portrait_activity_next_one_name">换一个</string>
+
+
+    <string name="head_portrait_activity_confirm">确认</string>
+
+
+    <string name="av_publish_title">看看他们怎么说</string>
+
+    <string name="video_title">说爱</string>
+    <string name="re_record">重新录制</string>
+    <string name="give_up_record">放弃录制</string>
+    <string name="video_is_not_exist">视频不存在</string>
+    <string name="member">会员</string>
+
+    <string name="verify_id_card">身份</string>
+    <string name="verify_car">车</string>
+    <string name="verify_house">房</string>
+    <string name="verify_education">学历</string>
+
+    <string name="prepare_upload_video">准备上传小视频</string>
+    <string name="upload_percent">上传进度</string>
+    <string name="upload_video_fail">上传视频失败</string>
+    <string name="net_work_is_error">当前网络不可用</string>
+
+    <string name="wifi_is_not_open">建议在wifi环境下操作，土豪请随意</string>
+    <string name="delete_video_success">删除视频成功</string>
+
+    <string name="upload_pic_tips">最多上传15张普通照</string>
+    <string name="nick_name_too_short">昵称太短,请输入两个字符及以上的昵称</string>
+    <string name="video_is_play">视频正在播放中，暂不可执行此操作</string>
+    <string name="sure_to_delete_video">确定删除该视频?</string>
+    <string name="video_uploading">视频正在上传中</string>
+    <string name="upload_video_success">上传视频成功，请等待审核</string>
+    <string name="video_is_error">录制的视频有问题，请重新录制</string>
+    <string name="camera_open_fail">相机打开失败，请确保相机权限或相机是否被占用</string>
+    <string name="please_open_audio">录音失败，请确保录音权限开启</string>
+    <string name="video_is_upload">正在上传视频，请稍等</string>
+    <string name="record_is_too_short">录制过短</string>
+    <string name="get_photo_fail">获取图片失败</string>
+    <string name="expand">展开</string>
+    <string name="retract">收回</string>
+
+    <string name="cleaning">清理中...</string>
+    <string name="click_twice_to_exit">再次点击，退出应用</string>
+    <string name="no_cache">没有缓存了</string>
+    <string name="zero">0KB</string>
+    <string name="verify_assets">进行学历、房、车认证凸显优势</string>
+    <string name="goto_verify">点击下方免费认证，异性好感立即飙升</string>
+    <string name="verify_education_text">认证学历</string>
+    <string name="verify_house_text">认证房产</string>
+    <string name="verify_car_text">认证车辆</string>
+    <string name="avatar_not_pass_tips">头像审核未通过，系统不会把你推荐给异性哦</string>
+
+
+    <string name="open_mask">开启眼罩</string>
+    <string name="close_mask">关闭眼罩</string>
+    <string name="please_input">请输入</string>
+
+    <string name="picture_size_not_allow">请重新上传25k~8M的照片</string>
+    <string name="info_complete_rate">资料完善度：</string>
+    <string name="upload_time_is_error">上传失败，请确保本地时间是否正确</string>
+    <string name="upload_video_tips">视频正在上传中，可在通知栏中查看进度</string>
+
+    <string name="verify_commit_tips">提交成功，我们将尽快审核</string>
+
+    <string name="buffering">正在缓冲</string>
+    <string name="video_play_error">视频播放出错</string>
+
+</resources>

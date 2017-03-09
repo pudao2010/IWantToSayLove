@@ -1,0 +1,38 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+
+        vectorDrawables.useSupportLibrary = true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    publishNonDefault true
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    releaseCompile project(path: ':network', configuration: 'release')
+    releaseCompile project(path: ':imageloader', configuration: 'release')
+    compile rootProject.ext.dependencies.appcompatv7
+    compile rootProject.ext.dependencies.gson
+    compile rootProject.ext.dependencies.eventbus
+    compile rootProject.ext.dependencies.androidDesign
+    compile rootProject.ext.dependencies.recyclerView
+    compile rootProject.ext.dependencies.statusBar
+    
+    // 默认取 release 导致 BuildConfig 配置不对
+    debugCompile project(path: ':network', configuration: 'debug')
+    debugCompile project(path: ':imageloader', configuration: 'debug')
+
+}

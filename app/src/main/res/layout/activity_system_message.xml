@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.bluewhaledt.saylove.base.widget.ObservableRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/orl_observable_keyboard"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <com.bluewhaledt.saylove.ui.message.view.InputPanel
+        android:id="@+id/ip_input_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"/>
+
+
+
+    <com.bluewhaledt.saylove.widget.linear_view.LinearSwipeRecyclerView
+        android:id="@+id/rl_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/ip_input_panel"
+        android:layout_marginBottom="10dp" />
+
+</com.bluewhaledt.saylove.base.widget.ObservableRelativeLayout>
+

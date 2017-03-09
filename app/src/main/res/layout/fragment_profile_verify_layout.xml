@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f7f8fb"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/banner_view"
+        android:layout_width="match_parent"
+        android:layout_height="127dp"
+        android:scaleType="centerCrop" />
+
+    <android.support.v4.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <com.bluewhaledt.saylove.ui.info.widget.ItemLayout
+        android:id="@+id/select_item_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/my_info_item_height"
+        android:background="@color/white"
+        app:bottomLineVisible="visible"
+        app:leftMargin="20dp"
+        app:leftTextColor="#666"
+        app:rightIconVisible="visible"
+        app:rightMargin="14dp"
+        app:rightText="@string/please_input"
+        app:rightTextColor="#bababa"
+        app:topLineVisible="visible" />
+
+
+    <com.bluewhaledt.saylove.ui.info.widget.ItemLayout
+        android:id="@+id/extra_select_item_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/my_info_item_height"
+        android:visibility="gone"
+        android:background="@color/white"
+        app:bottomLineVisible="visible"
+        app:leftMargin="20dp"
+        app:leftText="@string/education_background"
+        app:leftTextColor="#666"
+        app:rightIconVisible="visible"
+        app:rightMargin="14dp"
+        app:rightText="@string/select_nothing"
+        app:rightTextColor="#bababa" />
+
+    <android.support.v4.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="15dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="15dp">
+
+        <TextView
+            android:id="@+id/verify_tips_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#666" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/example_img_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7.5dp"
+                    android:text="@string/example" />
+            </LinearLayout>
+
+            <android.support.v4.widget.Space
+                android:layout_width="17dp"
+                android:layout_height="match_parent" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="110dp"
+                android:layout_weight="1"
+                android:background="@drawable/verify_bg_shape">
+
+                <ImageView
+                    android:id="@+id/upload_img_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop" />
+
+                <ImageView
+                    android:id="@+id/add_btn_img_view"
+                    android:layout_width="47dp"
+                    android:layout_height="47dp"
+                    android:layout_centerInParent="true"
+                    android:src="@mipmap/verify_add_icon" />
+                <ImageView
+                    android:id="@+id/iv_water_mark"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/say_love_water_mark"
+                    android:visibility="gone"/>
+                <TextView
+                    android:id="@+id/tv_verify_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:padding="8dp"
+                    android:layout_centerInParent="true"
+                    android:background="#80000000"
+                    android:visibility="gone"/>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/commit_btn"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/verify_commit_btn_selector"
+            android:text="@string/commit"
+            android:textColor="#dcbd58"
+
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_background_color"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="35dp"
+        android:layout_marginLeft="40dp"
+        android:layout_gravity="center_horizontal">
+
+        <com.bluewhaledt.saylove.ui.register_login.material_edittext.MaterialEditText
+            android:id="@+id/register_phone_edit_text_view"
+            style="@style/CommonEditTextStyle"
+            android:hint="@string/please_input_phone"
+            android:inputType="phone"
+            android:maxLength="11" />
+
+        <ImageView
+            android:id="@+id/phone_icon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginBottom="6dp"
+            android:layout_alignTop="@id/register_phone_edit_text_view"
+            android:layout_alignLeft="@id/register_phone_edit_text_view"
+            android:layout_alignBottom="@id/register_phone_edit_text_view"
+            android:src="@drawable/icon_register_phone_gray"/>
+
+        <ImageView
+            android:id="@+id/line"
+            android:layout_toRightOf="@id/phone_icon"
+            android:layout_marginLeft="10.5dp"
+            android:layout_marginBottom="6dp"
+            android:layout_alignTop="@id/register_phone_edit_text_view"
+            android:layout_alignBottom="@id/register_phone_edit_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/vertical_moulding_shape"/>
+
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn_get_verification_code"
+                android:text="@string/get_verify_code"
+                android:textColor="@color/btn_text_color_80_alpha_selector"
+                android:layout_alignParentRight="true"
+                android:textAllCaps="false"
+                android:background="@drawable/btn_black_bg8_selector"
+                android:gravity="center"
+                android:layout_width="110dp"
+                android:layout_height="35dp"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/btn_get_verification_code"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="center_horizontal">
+
+                <com.bluewhaledt.saylove.ui.register_login.material_edittext.MaterialEditText
+                    android:id="@+id/register_verification_code_edit_text"
+                    style="@style/CommonEditTextStyle"
+                    android:layout_marginRight="15dp"
+                    android:hint="@string/please_input_code"
+                    android:inputType="number"
+                    android:maxLength="4" />
+
+                <ImageView
+                    android:id="@+id/verify_code_icon"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginBottom="6dp"
+                    android:layout_alignTop="@id/register_verification_code_edit_text"
+                    android:layout_alignLeft="@id/register_verification_code_edit_text"
+                    android:layout_alignBottom="@id/register_verification_code_edit_text"
+                    android:src="@drawable/icon_register_code_gray"/>
+
+                <ImageView
+                    android:id="@+id/line_verify_code"
+                    android:layout_toRightOf="@id/verify_code_icon"
+                    android:layout_marginLeft="10.5dp"
+                    android:layout_marginBottom="6dp"
+                    android:layout_alignTop="@id/register_verification_code_edit_text"
+                    android:layout_alignBottom="@id/register_verification_code_edit_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/vertical_moulding_shape"/>
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"
+        android:layout_gravity="center_horizontal">
+
+        <com.bluewhaledt.saylove.ui.register_login.material_edittext.MaterialEditText
+            android:id="@+id/register_password_edit_text_view"
+            style="@style/CommonEditTextStyle"
+            android:hint="@string/pwd_hint_str"
+            android:inputType="textPassword"
+            android:maxLength="20" />
+
+
+        <ImageView
+            android:id="@+id/pwd_icon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginBottom="6dp"
+            android:layout_alignTop="@id/register_password_edit_text_view"
+            android:layout_alignLeft="@id/register_password_edit_text_view"
+            android:layout_alignBottom="@id/register_password_edit_text_view"
+            android:src="@drawable/icon_register_password_gray"/>
+
+        <ImageView
+            android:id="@+id/line_pwd"
+            android:layout_toRightOf="@id/pwd_icon"
+            android:layout_marginLeft="10.5dp"
+            android:layout_marginBottom="6dp"
+            android:layout_alignTop="@id/register_password_edit_text_view"
+            android:layout_alignBottom="@id/register_password_edit_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/vertical_moulding_shape"/>
+    </RelativeLayout>
+
+        <Button
+            android:id="@+id/register_next"
+            android:layout_marginTop="48dp"
+            style="@style/BlackButtonStyle"
+            android:text="@string/next_step"
+            />
+
+    <TextView
+        android:id="@+id/tv_regist_protocol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:textColor="#808080"
+        android:textSize="12sp" />
+
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="video_filter">
+        <item>自然</item>
+        <item>美白</item>
+        <item>炫黄</item>
+        <item>淡黄</item>
+        <item>淡紫</item>
+        <item>深黄</item>
+        <item>蓝调</item>
+        <item>淡蓝</item>
+        <item>粉红</item>
+        <item>黄色</item>
+        <item>暖色</item>
+        <item>青调</item>
+        <item>暖蓝</item>
+    </string-array>
+
+</resources>

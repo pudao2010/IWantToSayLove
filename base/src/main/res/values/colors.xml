@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="zhenai_tab_container_title">#8b5df5</color>
+    <color name="zhenai_tab_container_title_text">#ffffff</color>
+    <color name="zhenai_tab_container">#ffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="white">#ffffff</color>
+    <color name="alpha">#00000000</color>
+
+
+    <color name="hint_color">#c9caca</color>
+    <color name="edit_cursor_color">#426bf2</color>
+    <color name="edit_text_color">#333333</color>
+    <color name="divider_color">#dbdbdb</color>
+    <color name="list_item_layout_pressed">#f5f5f5</color>
+
+    <color name="pickerview_timebtn_nor">#057dff</color>
+    <color name="pickerview_timebtn_pre">#c2daf5</color>
+    <color name="pickerview_bg_topbar">#f5f5f5</color>
+    <color name="pickerview_topbar_title">#000000</color>
+    <color name="pickerview_wheelview_textcolor_out">#a8a8a8</color>
+    <color name="pickerview_wheelview_textcolor_center">#2a2a2a</color>
+    <color name="pickerview_wheelview_textcolor_divider">#d5d5d5</color>
+    <!--覆盖颜色-->
+    <color name="overlay_color">#60000000</color>
+    <color name="zhenai_library_container_bg">#00f7f8fb</color>
+</resources>

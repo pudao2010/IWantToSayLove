@@ -1,0 +1,128 @@
+<resources>
+
+    <!-- Base application theme.colorAccent改动了这一行的属性颜色的原因是我们perogressBar的颜色会集成这个app
+     theme 仕明改动-->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/black</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+<!--通用按钮样式-->
+    <style name="CommonButtonStyle">
+        <item name="android:background">@drawable/btn_bg_selector</item>
+        <item name="android:textSize">@dimen/common_text_size</item>
+        <item name="android:textColor">@color/btn_text_color_selector</item>
+        <item name="android:layout_marginLeft">17.5dp</item>
+        <item name="android:layout_marginRight">17.5dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">44dp</item>
+    </style>
+<!--黑色按钮样式-->
+    <style name="BlackButtonStyle">
+        <item name="android:background">@drawable/btn_black_bg8_selector</item>
+        <item name="android:textSize">@dimen/common_text_size</item>
+        <item name="android:textColor">@color/color_saylove</item>
+        <item name="android:layout_marginLeft">17.5dp</item>
+        <item name="android:layout_marginRight">17.5dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">44dp</item>
+    </style>
+    <!--黑色按钮样式-->
+    <style name="TouristBlackButtonStyle">
+        <item name="android:background">@drawable/btn_black_bg8_selector</item>
+        <item name="android:textSize">@dimen/common_text_size</item>
+        <item name="android:textColor">@color/color_saylove</item>
+        <item name="android:layout_marginLeft">17.5dp</item>
+        <item name="android:layout_marginRight">17.5dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">44dp</item>
+    </style>
+    <!--dialog的下面的按钮的样式-->
+    <style name="DialogBlackButtonStyle">
+        <item name="android:background">@drawable/btn_black_bg8_selector</item>
+        <item name="android:textSize">@dimen/common_text_size</item>
+        <item name="android:textColor">@color/color_saylove</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">44dp</item>
+    </style>
+    <!--身份认证的按钮格式-->
+    <style name="RealNameButtonStyle">
+        <item name="android:background">@drawable/button_bg_in_real_name_selector</item>
+        <item name="android:textSize">@dimen/common_text_size_inrealname</item>
+        <item name="android:textColor">#3a3a3a</item>
+        <item name="android:layout_marginLeft">17.5dp</item>
+        <item name="android:layout_marginRight">17.5dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">44dp</item>
+    </style>
+    <!--白色按钮样式-->
+    <style name="WhiteButtonStyle">
+        <item name="android:background">@drawable/button_bg_white</item>
+        <item name="android:textSize">@dimen/common_text_size</item>
+        <item name="android:textColor">@color/btn_text_color_selector</item>
+        <item name="android:layout_marginLeft">17.5dp</item>
+        <item name="android:layout_marginRight">17.5dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">44dp</item>
+    </style>
+
+    <style name="ModifyParentStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/my_info_item_height</item>
+        <item name="android:layout_marginLeft">@dimen/modify_item_margin_left</item>
+
+        <item name="leftTextColor">#333333</item>
+        <item name="leftTextSize">15sp</item>
+        <item name="rightTextSize">15sp</item>
+        <item name="bottomLineVisible">visible</item>
+
+    </style>
+
+    <style name="ModifyEnableStyle" parent="ModifyParentStyle">
+        <item name="rightTextColor">#333333</item>
+        <item name="rightIconVisible">visible</item>
+        <item name="rightMargin">10dp</item>
+    </style>
+
+    <style name="ModifyDisableStyle" parent="ModifyParentStyle">
+        <item name="rightTextColor">#808080</item>
+        <item name="rightIconVisible">gone</item>
+        <item name="rightMargin">@dimen/item_margin_right_without_arrow</item>
+    </style>
+
+    <style name="simpletooltip_default" parent="@android:style/TextAppearance.Medium">
+    </style>
+
+
+    <style name="horizontal_light_thin_divider">
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:background">#d9d9d9</item>
+    </style>
+
+    <!--android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="15sp"
+    android:paddingLeft="50dp"
+    app:met_clearButton="true"
+    app:met_helperTextAlwaysShown="true"
+    app:met_baseColor="#333333"
+    app:met_primaryColor="#333333"
+    app:met_errorColor="#ff0000"
+    app:met_underlineColor="#cccccc"
+    android:textCursorDrawable="@drawable/vertical_moulding_shape"-->
+    <!--注册登录输入框基本样式-->
+    <style name="CommonEditTextStyle" >
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:paddingLeft">50dp</item>
+        <item name="android:textCursorDrawable">@drawable/vertical_moulding_shape</item>
+        <item name="met_clearButton">true</item>
+        <item name="met_underlineColor">#cccccc</item>
+        <item name="met_primaryColor">#cccccc</item>
+        <item name="clear_icon">@drawable/icon_register_delete</item>
+    </style>
+
+</resources>

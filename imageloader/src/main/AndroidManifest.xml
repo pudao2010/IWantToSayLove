@@ -1,0 +1,10 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bluewhaledt.saylove.imageloader">
+
+    <application
+        android:allowBackup="true"
+        android:supportsRtl="true">
+
+    </application>
+
+</manifest>

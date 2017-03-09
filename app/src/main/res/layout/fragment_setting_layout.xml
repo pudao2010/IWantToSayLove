@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f7f8fb"
+    android:orientation="vertical">
+
+    <android.support.v4.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="14dp">
+
+        <com.bluewhaledt.saylove.ui.info.widget.ItemLayout
+            android:id="@+id/modify_password_item_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_layout_height"
+            app:bottomLineVisible="visible"
+            app:leftText="@string/modify_password"
+            app:leftTextColor="#333"
+            app:rightIconVisible="visible"
+            app:rightMargin="19dp" />
+
+        <com.bluewhaledt.saylove.ui.info.widget.ItemLayout
+            android:id="@+id/clear_cache_item_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_layout_height"
+            app:bottomLineVisible="visible"
+            app:leftText="@string/clean_cache"
+            app:leftTextColor="#333"
+            app:rightIconVisible="gone"
+            app:rightMargin="19dp" />
+
+
+    </LinearLayout>
+
+    <android.support.v4.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <com.bluewhaledt.saylove.ui.info.widget.ItemLayout
+        android:id="@+id/about_item_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_layout_height"
+        android:background="@color/white"
+        app:bottomLineVisible="visible"
+        app:leftMargin="14dp"
+        app:leftText="@string/about_say_love"
+        app:leftTextColor="#333"
+        app:topLineVisible="visible" />
+
+    <android.support.v4.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <Button
+        android:id="@+id/setting_btn_logout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="15sp"
+        android:textColor="#333333"
+        android:background="@drawable/fragment_setting_btnbg_selector"
+        android:text="@string/logout"/>
+
+</LinearLayout>

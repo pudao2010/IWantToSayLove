@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_livingcity"
+        android:layout_width="match_parent"
+        android:layout_height="126dp"
+        android:background="@mipmap/banner"
+        android:gravity="center"
+        android:text="@string/where_do_you_live"
+        android:textColor="#c0a23d"
+        android:textSize="24sp"/>
+    <android.support.v4.widget.Space
+        android:id="@+id/top_space"
+        android:layout_below="@+id/tv_livingcity"
+        android:layout_height="50.5dp"
+        android:layout_width="match_parent"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top_space"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+        <com.bluewhaledt.saylove.ui.register_login.widget.WheelView
+           android:id="@+id/wv_provinve"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <android.support.v4.widget.Space
+            android:layout_width="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="match_parent"/>
+        <com.bluewhaledt.saylove.ui.register_login.widget.WheelView
+            android:id="@+id/wv_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_next"
+        style="@style/BlackButtonStyle"
+        android:text="@string/next_step"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="83.5dp"
+    />
+</RelativeLayout>

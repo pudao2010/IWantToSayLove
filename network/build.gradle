@@ -1,0 +1,52 @@
+apply plugin: 'com.android.library'
+
+// 加载config.properties文件
+Properties configProp = new Properties()
+configProp.load(new FileInputStream(file("$rootDir/config.properties")))
+
+String server_address = System.properties['server_address']
+if (server_address == null || server_address.isEmpty()) {
+    server_address = configProp['server_address']
+}
+
+String publish_environment = 'formal'
+if (!'api.sayloveapp.com'.equals(server_address)) {
+    publish_environment = 'personal'
+}
+
+def version_code = Integer.valueOf(new Date().format("yyyyMMdd"))
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode version_code
+        versionName configProp['versionName']
+
+        buildConfigField "String", "SERVER_ADDRESS_FORMAL", "\"http://api.sayloveapp.com/\""
+        buildConfigField "String", "SERVER_ADDRESS_FORMAL_S", "\"https://api.sayloveapp.com/\""
+        buildConfigField "String", "PUBLISH_ENVIRONMENT", "\"${publish_environment}\""
+        buildConfigField "String", "SERVER_ADDRESS_PERSONAL", "\"http://${server_address}/\""
+    }
+    buildTypes {
+        debug {
+            versionNameSuffix '00'
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    publishNonDefault true
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile rootProject.ext.dependencies.retrofit
+    compile rootProject.ext.dependencies.retrofitConverterGson
+    compile rootProject.ext.dependencies.retrofitAdapterRxjava
+    compile rootProject.ext.dependencies.okHttp3LoggingInterceptor
+    compile rootProject.ext.dependencies.rxAndroid
+}

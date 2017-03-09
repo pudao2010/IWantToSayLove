@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/item_fragment_ll_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/fragment_recommend_layout_iv_bg"
+            android:layout_width="match_parent"
+            android:layout_height="368dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="centerCrop" />
+        <!--      android:background="@mipmap/bg_home_mask"-->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="368dp"
+            android:layout_marginTop="10dp"
+            android:background="@mipmap/bg_home_mask"
+            android:scaleType="fitXY" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/fragment_recommend_layout_iv_icon"
+                android:layout_width="match_parent"
+                android:layout_height="320dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:adjustViewBounds="true"
+            />
+        </FrameLayout>
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="18dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/item_fragment_recommend_tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="青页子"
+                android:textColor="#000"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/item_fragment_recommend_im_isvip"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_gravity="center_vertical"
+                android:layout_toRightOf="@id/item_fragment_recommend_tv_name"
+                android:src="@mipmap/icon_crown"
+                android:visibility="gone" />
+
+            <FrameLayout
+                android:id="@+id/item_fragment_recommend_iv_hot_framelaout_container"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="60dp">
+
+                <ImageView
+                    android:id="@+id/item_fragment_recommend_iv_hot_red"
+                    android:layout_width="25dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/icon_like_red"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/item_fragment_recommend_iv_hot"
+                    android:layout_width="25dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/icon_like"
+                    android:visibility="visible" />
+            </FrameLayout>
+
+            <ImageView
+                android:id="@+id/item_fragment_recommend_iv_msg"
+                android:layout_width="26dp"
+                android:layout_height="28dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/recommend_hot_selector" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/item_fragment_recommend_tv_age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="26岁"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="12dp"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:background="#cccccc" />
+
+            <TextView
+                android:id="@+id/item_fragment_recommend_tv_where"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:text="广东深圳"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="12dp"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:background="#cccccc" />
+
+            <TextView
+                android:id="@+id/item_fragment_recommend_tv_height"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:text="180cm"
+                android:textSize="14sp" />
+
+            <!-- <TextView
+                 android:layout_gravity="center"
+                 android:layout_width="1dp"
+                 android:layout_height="12dp"
+                 android:layout_centerVertical="true"
+                 android:background="#747171"/>
+
+             <TextView
+                 android:id="@+id/item_fragment_recommend_tv_university"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginLeft="5dp"
+                 android:layout_marginRight="5dp"
+                 android:text="本科"
+                 android:textSize="14sp"/>-->
+
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="12dp"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:background="#cccccc" />
+
+            <TextView
+                android:id="@+id/item_fragment_recommend_tv_degree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:textSize="14sp"
+                android:visibility="gone"/>
+            <TextView
+                android:id="@+id/item_fragment_recommend_tv_degree_line"
+                android:visibility="gone"
+                android:layout_width="1dp"
+                android:layout_height="12dp"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:background="#cccccc" />
+            <TextView
+                android:id="@+id/item_fragment_recommend_tv_salary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:text="2-5W"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="4dp"
+                android:layout_height="12dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:background="#e8c77a" />
+
+            <TextView
+                android:id="@+id/item_fragment_recommend_tv_decide_codition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="已认证身份、车、房"
+                android:textColor="#000"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="#cccccc" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/item_fragment_recommend_iv_hot_red_biside"
+        android:layout_width="25dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="84.6dp"
+        android:layout_marginTop="348.6dp"
+        android:src="@mipmap/icon_like_red"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:background="@drawable/activity_why_need_money_popuwindonw_bg"
+              android:orientation="vertical">
+
+    <TextView
+        android:padding="3dp"
+        android:lineSpacingExtra="6dp"
+        android:id="@+id/tv_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12.2sp"
+        android:gravity="center_vertical"
+        android:text="@string/saylove_content1"
+        tools:ignore="RtlHardcoded" />
+</LinearLayout>

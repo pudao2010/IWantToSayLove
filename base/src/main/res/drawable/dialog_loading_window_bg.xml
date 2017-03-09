@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+<!--    <item>
+        <shape android:shape="rectangle"> &lt;!&ndash; this shape is used as shadow &ndash;&gt;
+            <padding android:bottom="19dp"
+                     android:left="14dp"
+                     android:right="14dp"
+                     android:top="10dp"/>
+            <corners android:radius="5dp"/>
+            <gradient android:angle="90"
+                      android:startColor="#cc4d3e0b"
+                      android:centerColor="#666a6a6a"
+                      android:endColor="#004d3e0b"
+                      android:type="radial"/>
+        </shape>
+    </item>-->
+
+    <!-- 阴影图片，android:left表示阴影图片左边到背景图片左边的距离
+android:top表示阴影图片上边到背景图片上边的距离-->
+    <item >
+        <shape>
+            <padding android:bottom="19dp"
+                    />
+            <corners android:radius="5dp"/>
+            <gradient android:angle="90"
+                      android:startColor="#ff000000"
+                      android:centerColor="#80000000"
+                      android:endColor="#004d3e0b"
+                      android:type="linear"
+                      android:centerX="0.5"
+                      android:centerY="0.5" />
+        </shape>
+    </item>
+    <!-- 背景图片，android:right表示阴影图片右边到背景图片右边的距离
+    android:bottom表示阴影图片下边到背景图片下边的距离-->
+
+
+
+    <!--<item   android:left="5dp"
+            android:top="5dp">
+        <shape>
+            <corners android:radius="5dp"/>
+            <gradient android:angle="90"
+                      android:startColor="#cc4d3e0b"
+                      android:centerColor="#666a6a6a"
+                      android:endColor="#004d3e0b"
+                      android:type="linear"/>
+        </shape>
+    </item>
+
+    <item   android:bottom="5dp"
+            android:right="5dp">
+        <shape>
+            <corners android:radius="5dp"/>
+            <gradient android:angle="90"
+                      android:startColor="#cc4d3e0b"
+                      android:centerColor="#666a6a6a"
+                      android:endColor="#004d3e0b"
+                      android:type="linear"/>
+        </shape>
+    </item>-->
+
+<!--    <item>
+        <shape android:shape="rectangle"> &lt;!&ndash; this is for dialog frame &ndash;&gt;
+            <corners android:radius="1dp"/>
+            <stroke android:color="#ff0000" android:width="2dp" />
+            <gradient android:angle="90"
+                      android:startColor="#ffa7a7a7"
+                      android:centerColor="#ff6a6a6a"
+                      android:endColor="#ffa7a7a7"
+                      android:type="linear"/>
+        </shape>
+    </item>-->
+</layer-list>

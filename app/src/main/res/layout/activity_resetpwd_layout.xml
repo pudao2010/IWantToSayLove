@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_background_color"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="35dp"
+        android:layout_marginLeft="40dp"
+        android:layout_gravity="center_horizontal">
+
+        <com.bluewhaledt.saylove.ui.register_login.material_edittext.MaterialEditText
+            android:id="@+id/resetpwd_phone_edit_text_view"
+            style="@style/CommonEditTextStyle"
+            android:hint="@string/please_input_phone"
+            android:inputType="phone"
+            android:maxLength="11" />
+
+        <ImageView
+            android:id="@+id/phone_icon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginBottom="6dp"
+            android:layout_alignTop="@id/resetpwd_phone_edit_text_view"
+            android:layout_alignLeft="@id/resetpwd_phone_edit_text_view"
+            android:layout_alignBottom="@id/resetpwd_phone_edit_text_view"
+            android:src="@drawable/icon_register_phone_gray"/>
+
+        <ImageView
+            android:id="@+id/line"
+            android:layout_toRightOf="@id/phone_icon"
+            android:layout_marginLeft="10.5dp"
+            android:layout_marginBottom="6dp"
+            android:layout_alignTop="@id/resetpwd_phone_edit_text_view"
+            android:layout_alignBottom="@id/resetpwd_phone_edit_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/vertical_moulding_shape"/>
+
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn_get_verification_code"
+                android:text="@string/get_verify_code"
+                android:textAllCaps="false"
+                android:textColor="#f0cf62"
+                android:layout_alignParentRight="true"
+                android:background="#3a3a3a"
+                android:gravity="center"
+                android:layout_width="110dp"
+                android:layout_height="35dp"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@id/btn_get_verification_code"
+                android:layout_gravity="center_horizontal">
+
+                <com.bluewhaledt.saylove.ui.register_login.material_edittext.MaterialEditText
+                    android:id="@+id/resetpwd_verification_code_edit_text"
+                    android:layout_marginRight="20dp"
+                    style="@style/CommonEditTextStyle"
+                    android:hint="@string/please_input_code"
+                    android:inputType="number"
+                    android:maxLength="4" />
+
+                <ImageView
+                    android:id="@+id/verify_code_icon"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginBottom="6dp"
+                    android:layout_alignTop="@id/resetpwd_verification_code_edit_text"
+                    android:layout_alignLeft="@id/resetpwd_verification_code_edit_text"
+                    android:layout_alignBottom="@id/resetpwd_verification_code_edit_text"
+                    android:src="@drawable/icon_register_code_gray"/>
+
+                <ImageView
+                    android:id="@+id/line_verify_code"
+                    android:layout_toRightOf="@id/verify_code_icon"
+                    android:layout_marginLeft="10.5dp"
+                    android:layout_marginBottom="6dp"
+                    android:layout_alignTop="@id/resetpwd_verification_code_edit_text"
+                    android:layout_alignBottom="@id/resetpwd_verification_code_edit_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/vertical_moulding_shape"/>
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="35dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal">
+
+        <com.bluewhaledt.saylove.ui.register_login.material_edittext.MaterialEditText
+            android:id="@+id/resetpwd_password_edit_text_view"
+           style="@style/CommonEditTextStyle"
+            android:hint="@string/please_set_new_pwd"
+            android:inputType="textPassword"
+            android:maxLength="20" />
+
+
+        <ImageView
+            android:id="@+id/pwd_icon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginBottom="6dp"
+            android:layout_alignTop="@id/resetpwd_password_edit_text_view"
+            android:layout_alignLeft="@id/resetpwd_password_edit_text_view"
+            android:layout_alignBottom="@id/resetpwd_password_edit_text_view"
+            android:src="@drawable/icon_register_password_gray"/>
+
+        <ImageView
+            android:id="@+id/line_pwd"
+            android:layout_toRightOf="@id/pwd_icon"
+            android:layout_marginLeft="10.5dp"
+            android:layout_marginBottom="6dp"
+            android:layout_alignTop="@id/resetpwd_password_edit_text_view"
+            android:layout_alignBottom="@id/resetpwd_password_edit_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/vertical_moulding_shape"/>
+    </RelativeLayout>
+
+        <Button
+            android:id="@+id/modify"
+            android:layout_marginTop="48dp"
+            style="@style/BlackButtonStyle"
+            android:text="@string/ok"
+            />
+
+</LinearLayout>

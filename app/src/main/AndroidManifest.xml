@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.bluewhaledt.saylove">
+
+    <!-- 网络权限 -->
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+
+    <!-- 外置存储存取权限 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <!-- 控制呼吸灯，振动器等，用于新消息提醒 -->
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
+    <!-- 多媒体相关 -->
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+
+    <!-- 网易云视频 点播SDK 权限说明 -->
+    <!-- 允许程序使用PowerManager WakeLocks以防止处理器休眠或者屏幕锁屏 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+
+    <!-- 网易云信SDK 权限申明 -->
+    <permission
+        android:name="com.bluewhaledt.saylove.permission.RECEIVE_MSG"
+        android:protectionLevel="signature"/>
+    <!-- 网易云信接收 SDK 消息广播权限 -->
+    <uses-permission android:name="com.bluewhaledt.saylove.permission.RECEIVE_MSG"/>
+    <!-- 百度定位SDK权限 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+    <!-- 芝麻 -->
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <!-- 芝麻 -->
+    <!-- OpenGL ES 2.0 -->
+    <uses-feature android:glEsVersion="0x00020000"/>
+
+    <application
+        android:name="com.bluewhaledt.saylove.ZhenaiApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/saylove_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- 芝麻 -->
+        <activity
+            android:name="com.android.moblie.zmxy.antgroup.creditsdk.app.SDKActivity"
+            android:label="芝麻信用"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.android.moblie.zmxy.antgroup.creditsdk.ui.FaceVerifyGuideActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.android.moblie.zmxy.antgroup.creditsdk.ui.face.FaceDetectActivity"
+            android:screenOrientation="portrait"/>
+        <!-- 芝麻 -->
+        <activity
+            android:name="com.bluewhaledt.saylove.ui.register_login.real_name.RealNameGoMoneyActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.bluewhaledt.saylove.ui.register_login.real_name.RealNameActivity"
+            android:screenOrientation="portrait"
+        />
+        <!-- 上传头像 -->
+        <activity
+            android:name="com.bluewhaledt.saylove.ui.register_login.Head_portrait.HeadPortraitActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name="com.bluewhaledt.saylove.ui.system.SystemMessageActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"/>
+
+        <!-- 闪屏 -->
+        <activity
+            android:name="com.bluewhaledt.saylove.ui.register_login.others.SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.bluewhaledt.saylove.ui.message.ChatDetailActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <!-- 主界面 -->
+        <activity
+            android:name="com.bluewhaledt.saylove.ui.MainActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <!-- 信息完善页 -->
+        <activity android:name="com.bluewhaledt.saylove.ui.register_login.regist.BaseInfoEditActivity"/>
+        <!-- 狂一狂 -->
+        <activity android:name="com.bluewhaledt.saylove.ui.tourist.TouristSexActivity"/>
+        <activity android:name="com.bluewhaledt.saylove.ui.tourist.TouristDetailActivity"/>
+        <!-- 登录 -->
+        <activity
+            android:name="com.bluewhaledt.saylove.ui.register_login.login.LoginActivity"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateVisible"/>
+        <!-- 忘记密码 -->
+        <activity
+            android:name="com.bluewhaledt.saylove.ui.register_login.login.ResetPwdActivity"
+            android:windowSoftInputMode="stateVisible"/>
+        <activity android:name="com.bluewhaledt.saylove.ui.pay.PayActivity"/>
+
+        <!-- 微信API相关 -->
+        <activity
+            android:name="com.bluewhaledt.saylove.wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+
+        <!-- 阿里支付 -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"/>
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"/>
+        <!-- TCL 银联支付 -->
+        <activity
+            android:name="com.unionpay.uppay.PayActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:excludeFromRecents="true"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"/>
+
+        <!-- QQ auth token -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+
+                <data android:scheme="tencent208641"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="behind"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+
+        <!-- 照片裁剪 -->
+        <activity
+            android:name="com.bluewhaledt.saylove.photo.PhotoCropActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:screenOrientation="portrait"/>
+
+        <!-- 视频播放页 -->
+
+
+        <!-- 视频播放页 -->
+        <activity
+            android:name="com.bluewhaledt.saylove.ui.video.IJKAvPlayerActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+
+        <!-- 中转页 -->
+        <activity
+            android:name="com.bluewhaledt.saylove.ui.video.RouterActivity"
+            android:screenOrientation="portrait"/>
+
+        <!-- 视频录制页 -->
+        <activity
+            android:name="com.bluewhaledt.saylove.ui.video.AVRecordActivity"
+            android:screenOrientation="portrait"/>
+
+        <!-- 视频发布页面 -->
+        <activity
+            android:name="com.bluewhaledt.saylove.ui.video.AVPublishActivity"
+            android:screenOrientation="portrait"/>
+
+        <!-- 登录注册入口页面 -->
+        <activity
+            android:name="com.bluewhaledt.saylove.ui.register_login.regist.EntranceActivity"
+            android:launchMode="singleTask"/>
+
+        <!-- 服务条款 -->
+        <activity
+            android:name="com.bluewhaledt.saylove.ui.register_login.regist.ProtocolActivity"
+            android:screenOrientation="portrait"/>
+
+        <!--
+             APP key, 可以在这里设置，也可以在 SDKOptions 中提供。
+            如果 SDKOptions 中提供了，取 SDKOptions 中的值。
+        -->
+        <meta-data
+            android:name="com.netease.nim.appKey"
+            android:value="1265fa01db7687dcbe7211d1ad00546a"/>
+
+        <!-- 声明云信后台服务，如需保持后台推送，使用独立进程效果会更好。 -->
+        <service
+            android:name="com.netease.nimlib.service.NimService"
+            android:process=":core"/>
+        <service
+            android:name="com.netease.nimlib.service.NimService$Aux"
+            android:process=":core"/>
+        <service android:name="com.bluewhaledt.saylove.video_record.upload.UploadService"/>
+
+        <!--
+             云信SDK的监视系统启动和网络变化的广播接收器，用户开机自启动以及网络变化时候重新登录，
+            保持和 NimService 同一进程
+        -->
+        <receiver
+            android:name="com.netease.nimlib.service.NimReceiver"
+            android:exported="false"
+            android:process=":core">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+
+        <!-- 云信进程间通信 Receiver -->
+        <receiver android:name="com.netease.nimlib.service.ResponseReceiver"/>
+
+        <!-- 安卓保活配置 -->
+        <service
+            android:name="com.netease.cosine.core.CosineService"
+            android:process=":cosine"/>
+
+        <receiver
+            android:name="com.netease.cosine.target.CosineReceiver"
+            android:exported="true"
+            android:process=":cosine"/>
+
+        <meta-data
+            android:name="com.netease.cosine.target"
+            android:value=""/>
+        <meta-data
+            android:name="com.netease.cosine.target.receiver"
+            android:value="com.netease.nimlib.service.NimReceiver"/>
+
+        <receiver
+            android:name="com.bluewhaledt.saylove.im.IMReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.bluewhaledt.saylove.ACTION.RECEIVE_MSG"/>
+                <action android:name="com.bluewhaledt.saylove.ACTION.RECEIVE_CUSTOM_NOTIFICATION"/>
+            </intent-filter>
+        </receiver>
+
+        <!-- 百度定位 access key 与定位服务 -->
+            <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="EkyxEtkcKex5VGsbLv3Z1ptoCw2eVa1D" />
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote">
+        </service>
+
+        <!-- 友盟统计 formal -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5864af2807fe6542d50018ec" />
+    </application>
+
+</manifest>

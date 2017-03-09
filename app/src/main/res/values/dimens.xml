@@ -1,0 +1,109 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="my_info_item_height">50dp</dimen>
+    <dimen name="item_margin_right">12dp</dimen>
+
+    <dimen name="item_margin_right_without_arrow">20dp</dimen>
+
+    <dimen name="item_margin_left">19.5dp</dimen>
+
+
+    <dimen name="item_between_dimen">10dp</dimen>
+    <dimen name="modify_item_margin_left">12dp</dimen>
+
+    <dimen name="nick_name_edit_text_margin_dimen">35dp</dimen>
+
+
+    <!--消息页-->
+    <dimen name="fragment_msg_list_item_margin">5dp</dimen>
+    <dimen name="split_one_pixels">1px</dimen>
+
+
+    <!--MaterialEditText-->
+    <dimen name="line_view_height">1px</dimen>
+
+    <dimen name="default_padding_top">8dp</dimen>
+    <dimen name="default_padding_bottom">8dp</dimen>
+    <dimen name="inner_padding_left">0dp</dimen>
+    <dimen name="inner_padding_right">0dp</dimen>
+    <dimen name="floating_label_text_size">12sp</dimen>
+    <dimen name="bottom_text_size">12sp</dimen>
+    <dimen name="inner_components_spacing">8dp</dimen>
+    <dimen name="bottom_ellipsis_height">4dp</dimen>
+
+    <dimen name="user_avatar_dimen">80dp</dimen>
+    <dimen name="edit_text_margin_dimen">35dp</dimen>
+
+
+    <dimen name="text_size_24px">16sp</dimen>
+    <dimen name="text_size_small">14sp</dimen>
+    <dimen name="register_code_img_width">85dp</dimen>
+    <dimen name="register_code_img_height">39dp</dimen>
+    <dimen name="register_code_spacing">10dp</dimen>
+    <dimen name="register_button_height">45dp</dimen>
+    <dimen name="register_button_radius">2dp</dimen>
+    <dimen name="register_random_code_font_size">18sp</dimen>
+    <dimen name="item_layout_text_size">16sp</dimen>
+    <dimen name="item_layout_height">50dp</dimen>
+    <dimen name="item_layout_margin">15dp</dimen>
+    <dimen name="pay_item_height_dimen">60dp</dimen>
+
+    <dimen name="button_text_size">17sp</dimen>
+    <dimen name="button_item_height">45dp</dimen>
+    <dimen name="button_item_margin">35dp</dimen>
+    <dimen name="button_item_spacing">16dp</dimen>
+
+    <dimen name="picture_dimen">80dp</dimen>
+    <dimen name="picture_between_dimen">5dp</dimen>
+    <dimen name="blur_img_height">134dp</dimen>
+    <dimen name="more_photo_picture_dimen">85dp</dimen>
+
+    <dimen name="edit_text_margin_top">2dp</dimen>
+    <dimen name="common_text_size">14sp</dimen>
+    <dimen name="common_text_size_inrealname">15sp</dimen>
+    <!--   popu start-->
+    <dimen name="simpletooltip_overlay_circle_offset">10dp</dimen>
+    <dimen name="simpletooltip_margin">10dp</dimen>
+    <dimen name="simpletooltip_padding">8dp</dimen>
+    <dimen name="simpletooltip_arrow_width">30dp</dimen>
+    <dimen name="simpletooltip_arrow_height">15dp</dimen>
+    <dimen name="simpletooltip_animation_padding">4dp</dimen>
+
+    <dimen name="third_party_left_margin">18.5dp</dimen>
+    <dimen name="third_party_line_left_margin">5dp</dimen>
+    <dimen name="third_party_right_margin">18.5dp</dimen>
+
+    <dimen name="info_item_between_dimen">10dp</dimen>
+    <dimen name="verify_detail_item_top_margin">10dp</dimen>
+
+    <dimen name="third_party_avatar_dimen">162dp</dimen>
+
+    <dimen name="bottom_line_view_height">0.5dp</dimen>
+
+    <dimen name="third_party_text_drawable_padding">15dp</dimen>
+
+    <!--支付-->
+    <dimen name="activity_pay_vip_padding_left">20dp</dimen>
+    <dimen name="video_recycle_view_spacing">14dp</dimen>
+
+    <dimen name="record_edge_width">2dp</dimen>
+    <dimen name="record_stop_icon_dimen">20dp</dimen>
+    <dimen name="record_stop_icon_radius">1dp</dimen>
+
+    <dimen name="video_question_margin_left">20dp</dimen>
+    <dimen name="video_arrow_padding">20dp</dimen>
+
+    <dimen name="upload_service_view_height">70dp</dimen>
+
+    <dimen name="video_index_item_radius">2dp</dimen>
+
+    <dimen name="expand_text_view_text_size">14sp</dimen>
+    <dimen name="expand_text_view_padding">10dp</dimen>
+    <dimen name="expand_text_view_margin">5dp</dimen>
+
+    <dimen name="video_index_item_margin">15dp</dimen>
+
+</resources>

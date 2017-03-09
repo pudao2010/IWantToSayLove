@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+
+
+    <com.bluewhaledt.saylove.base.widget.commonbackground.CommonBackgroundButton
+        android:id="@+id/report_user_view"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="@string/report"
+        android:textColor="@color/black"
+        app:color_normal="@color/white"
+        app:color_pressed="@color/color_dedede"
+        app:fill_mode="solid"
+        app:shape="rect"
+        app:stateful="true"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#ccc"/>
+
+
+    <com.bluewhaledt.saylove.base.widget.commonbackground.CommonBackgroundButton
+        android:id="@+id/cancel_view"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="@string/cancel"
+        android:textColor="@color/black"
+        app:color_normal="@color/white"
+        app:color_pressed="@color/color_dedede"
+        app:fill_mode="solid"
+        app:shape="rect"
+        app:stateful="true"/>
+
+
+</LinearLayout>

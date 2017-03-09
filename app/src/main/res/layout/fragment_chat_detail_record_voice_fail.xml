@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="135dp"
+    android:layout_height="135dp"
+    android:orientation="vertical"
+    android:background="@drawable/fragment_chat_detail_voice_shape">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/iv_voice_volume"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@mipmap/fragment_chat_detail_record_voice_failed"/>
+
+        <TextView
+            android:id="@+id/tv_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_marginTop="14dp"
+            android:textSize="13sp"
+            android:gravity="center"
+            android:text="@string/fragment_chat_detail_dialog_voice_record_failed"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

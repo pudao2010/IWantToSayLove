@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+              android:orientation="vertical"
+                android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_marital"
+        android:layout_width="match_parent"
+        android:layout_height="126dp"
+        android:background="@mipmap/banner"
+        android:gravity="center"
+        android:text="@string/whats_your_marital_status"
+        android:textColor="#c0a23d"
+        android:textSize="24sp"/>
+
+    <Button
+        android:id="@+id/marital_no"
+        android:layout_marginTop="30dp"
+        style="@style/CommonButtonStyle"
+        android:text="@string/single"/>
+    <Button
+        android:id="@+id/divoce"
+        android:layout_marginTop="20dp"
+        style="@style/CommonButtonStyle"
+        android:text="@string/divorced"/>
+    <Button
+        android:id="@+id/widowed"
+        android:layout_marginTop="20dp"
+        style="@style/CommonButtonStyle"
+        android:text="@string/widowed"/>
+</LinearLayout>

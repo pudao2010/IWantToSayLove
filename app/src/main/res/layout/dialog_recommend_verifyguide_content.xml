@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+>
+
+
+<LinearLayout
+              android:layout_width="310dp"
+              android:gravity="center"
+              android:background="@drawable/bg_home_dialog"
+              android:orientation="vertical"
+             android:layout_height="91dp">
+
+     <TextView
+         android:text="@string/verify_assets"
+         android:textSize="16sp"
+         android:textColor="#e8c77a"
+         android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+     <TextView
+         android:text="@string/goto_verify"
+         android:layout_marginTop="10dp"
+         android:textSize="12sp"
+         android:textColor="@color/color_gray"
+         android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+</LinearLayout>
+
+
+<LinearLayout
+              android:layout_width="310dp"
+              android:gravity="center"
+              android:orientation="horizontal"
+              android:layout_height="122dp">
+
+<LinearLayout
+    android:id="@+id/ll_verify_education"
+    android:layout_width="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+     <ImageView
+         android:layout_width="55dp"
+         android:layout_height="55dp"
+         android:padding="15dp"
+         android:src="@drawable/icon_home_dialog_study"
+         android:background="@drawable/black_circle_solid_bg"/>
+     <TextView
+         android:text="@string/verify_education_text"
+         android:textColor="@color/common_black_color"
+         android:textSize="14sp"
+         android:layout_marginTop="11.5dp"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"/>
+
+</LinearLayout>
+
+
+<LinearLayout
+    android:id="@+id/ll_verify_house"
+    android:layout_width="wrap_content"
+    android:gravity="center"
+    android:layout_marginLeft="35dp"
+    android:layout_marginRight="35dp"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+     <ImageView
+         android:layout_width="55dp"
+         android:layout_height="55dp"
+         android:padding="15dp"
+         android:src="@drawable/icon_home_dialog_house"
+         android:background="@drawable/black_circle_solid_bg" android:id="@+id/imageView"/>
+     <TextView
+         android:text="@string/verify_house_text"
+         android:layout_marginTop="11.5dp"
+         android:textColor="@color/common_black_color"
+         android:textSize="14sp"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"/>
+
+</LinearLayout>
+
+
+<LinearLayout
+    android:id="@+id/ll_verify_car"
+    android:layout_width="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+     <ImageView
+         android:layout_width="55dp"
+         android:layout_height="55dp"
+         android:padding="15dp"
+         android:src="@drawable/icon_home_dialog_car"
+         android:background="@drawable/black_circle_solid_bg"/>
+     <TextView
+         android:text="@string/verify_car_text"
+         android:layout_marginTop="11.5dp"
+         android:textColor="@color/common_black_color"
+         android:textSize="14sp"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"/>
+
+</LinearLayout>
+
+</LinearLayout>
+</LinearLayout>

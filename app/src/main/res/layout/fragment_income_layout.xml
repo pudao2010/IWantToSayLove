@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+              android:orientation="vertical"
+                android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_income"
+        android:layout_width="match_parent"
+        android:layout_height="126dp"
+        android:background="@mipmap/banner"
+        android:gravity="center"
+        android:text="@string/how_much_is_your_incom"
+        android:textColor="#c0a23d"
+        android:textSize="24sp"/>
+
+    <Button
+        android:id="@+id/salary_10w"
+        android:layout_marginTop="30dp"
+        style="@style/CommonButtonStyle"
+        android:text="@string/below_10W"/>
+    <Button
+        android:id="@+id/salary_20w"
+        android:layout_marginTop="20dp"
+        style="@style/CommonButtonStyle"
+        android:text="@string/below_20W"/>
+    <Button
+        android:id="@+id/salary_30w"
+        android:layout_marginTop="20dp"
+        style="@style/CommonButtonStyle"
+        android:text="@string/below_30W"/>
+    <Button
+        android:id="@+id/salary_50w"
+        android:layout_marginTop="20dp"
+        style="@style/CommonButtonStyle"
+        android:text="@string/below_50W"/>
+    <Button
+        android:id="@+id/salary_100w"
+        android:layout_marginTop="20dp"
+        style="@style/CommonButtonStyle"
+        android:text="@string/below_100W"/>
+    <Button
+        android:id="@+id/salary_max"
+        android:layout_marginTop="20dp"
+        style="@style/CommonButtonStyle"
+        android:text="@string/over_100W"/>
+</LinearLayout>

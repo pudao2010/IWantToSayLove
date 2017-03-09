@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f7f8fb">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:descendantFocusability="blocksDescendants"
+            android:orientation="vertical">
+
+
+            <!-- 顶部头像-->
+            <include layout="@layout/item_info_header_layout" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/bottom_line_view_height"
+                android:background="@color/item_bottom_line_color" />
+
+            <android.support.v4.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_between_dimen" />
+
+
+            <!-- 开通会员栏 -->
+            <com.bluewhaledt.saylove.ui.info.widget.ItemLayout
+                android:id="@+id/item_to_pay_member_view"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/my_info_item_height"
+                android:background="@color/white"
+                app:bottomLineVisible="visible"
+                app:leftIconDrawable="@mipmap/icon_me_crown"
+                app:leftMargin="@dimen/item_margin_left"
+                app:leftText="@string/item_pay_member"
+                app:leftTextColor="#dfc05f"
+                app:rightIconVisible="visible"
+                app:rightMargin="@dimen/item_margin_right"
+                app:topLineVisible="visible" />
+
+            <android.support.v4.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_between_dimen" />
+
+            <!-- 头像栏 -->
+            <com.bluewhaledt.saylove.ui.info.widget.PhotoAndVideoLayout
+                android:id="@+id/photo_widget_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                app:isShowUpload="true"
+                app:uploadType="photo" />
+
+            <android.support.v4.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_between_dimen" />
+
+            <!-- 认证信息 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bottom_line_view_height"
+                    android:background="@color/item_bottom_line_color" />
+
+                <com.bluewhaledt.saylove.ui.info.widget.ItemLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/my_info_item_height"
+                    android:layout_marginLeft="@dimen/item_margin_left"
+                    app:bottomLineVisible="visible"
+                    app:leftText="@string/item_verify_info"
+                    app:leftTextColor="@color/black"
+                    app:rightLayoutVisible="gone" />
+
+                <com.bluewhaledt.saylove.ui.info.widget.ItemLayout
+                    android:id="@+id/item_id_card_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/my_info_item_height"
+                    app:leftIconDrawable="@mipmap/icon_me_id_gray"
+                    app:leftMargin="@dimen/item_margin_left"
+                    app:leftText="@string/item_id_card_verify"
+                    app:leftTextColor="@color/third_party_item_left_color"
+                    app:rightIconVisible="visible"
+                    app:rightMargin="@dimen/item_margin_right"
+                    app:rightText="@string/click_to_verify"
+                    app:rightTextColor="@color/third_party_item_right_color" />
+
+                <com.bluewhaledt.saylove.ui.info.widget.ItemLayout
+                    android:id="@+id/item_education_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/my_info_item_height"
+                    app:leftIconDrawable="@mipmap/icon_me_study_gray"
+                    app:leftMargin="@dimen/item_margin_left"
+                    app:leftText="@string/item_education_verify"
+                    app:leftTextColor="@color/third_party_item_left_color"
+                    app:rightIconVisible="visible"
+                    app:rightMargin="@dimen/item_margin_right"
+                    app:rightText="@string/click_to_verify"
+                    app:rightTextColor="@color/third_party_item_right_color" />
+
+                <com.bluewhaledt.saylove.ui.info.widget.ItemLayout
+                    android:id="@+id/item_car_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/my_info_item_height"
+                    app:leftIconDrawable="@mipmap/icon_me_car_gray"
+                    app:leftMargin="@dimen/item_margin_left"
+                    app:leftText="@string/item_car_verify"
+                    app:leftTextColor="@color/third_party_item_left_color"
+                    app:rightIconVisible="visible"
+                    app:rightMargin="@dimen/item_margin_right"
+                    app:rightText="@string/click_to_verify"
+                    app:rightTextColor="@color/third_party_item_right_color" />
+
+                <com.bluewhaledt.saylove.ui.info.widget.ItemLayout
+                    android:id="@+id/item_house_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/my_info_item_height"
+                    app:bottomLineVisible="visible"
+                    app:leftIconDrawable="@mipmap/icon_me_house_gray"
+                    app:leftMargin="@dimen/item_margin_left"
+                    app:leftText="@string/item_house_verify"
+                    app:leftTextColor="@color/third_party_item_left_color"
+                    app:rightIconVisible="visible"
+                    app:rightMargin="@dimen/item_margin_right"
+                    app:rightText="@string/click_to_verify"
+                    app:rightTextColor="@color/third_party_item_right_color" />
+
+            </LinearLayout>
+
+            <android.support.v4.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_between_dimen" />
+
+            <!-- 自我介绍 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bottom_line_view_height"
+                    android:background="@color/item_bottom_line_color" />
+
+                <com.bluewhaledt.saylove.ui.info.widget.ItemLayout
+                    android:id="@+id/item_introduce_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/my_info_item_height"
+                    android:layout_marginLeft="@dimen/item_margin_left"
+                    app:leftText="@string/item_introduce_myself"
+                    app:leftTextColor="@color/black"
+                    app:rightIconVisible="visible"
+                    app:rightMargin="@dimen/item_margin_right"
+                    app:rightText="@string/click_to_edit"
+                    app:rightTextColor="@color/third_party_item_right_color" />
+
+
+                <LinearLayout
+                    android:id="@+id/introduce_detail_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/bottom_line_view_height"
+                        android:layout_marginLeft="@dimen/item_margin_left"
+                        android:background="@color/item_bottom_line_color" />
+
+                    <com.bluewhaledt.saylove.widget.ExpandTextView
+                        android:id="@+id/introduce_text_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12.5dp"
+                        android:layout_marginLeft="@dimen/item_margin_left"
+                        android:layout_marginRight="@dimen/item_margin_left"
+                        android:layout_marginTop="12.5dp"
+                        app:expandMaxLine="3"
+                        app:expandTextPadding="0dp"
+                        app:expandTextColor="#666"
+                        app:expandTextSize="14sp" />
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bottom_line_view_height"
+                    android:background="@color/item_bottom_line_color" />
+
+            </LinearLayout>
+
+            <android.support.v4.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_between_dimen" />
+
+
+            <com.bluewhaledt.saylove.ui.info.widget.ItemLayout
+                android:id="@+id/item_basic_info_view"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/my_info_item_height"
+                android:background="@color/white"
+                app:bottomLineVisible="visible"
+                app:leftMargin="@dimen/item_margin_left"
+                app:leftText="@string/item_basic_info"
+                app:leftTextColor="@color/black"
+                app:rightIconVisible="visible"
+                app:rightMargin="@dimen/item_margin_right"
+                app:rightText="@string/click_to_edit"
+                app:rightTextColor="@color/third_party_item_right_color"
+                app:topLineVisible="visible" />
+
+            <android.support.v4.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_between_dimen" />
+
+
+            <com.bluewhaledt.saylove.ui.info.widget.ItemLayout
+                android:id="@+id/item_other_require_view"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/my_info_item_height"
+                android:background="@color/white"
+                app:bottomLineVisible="visible"
+                app:leftMargin="@dimen/item_margin_left"
+                app:leftText="@string/item_other_require"
+                app:leftTextColor="@color/black"
+                app:rightIconVisible="visible"
+                app:rightMargin="@dimen/item_margin_right"
+                app:rightText="@string/click_to_edit"
+                app:rightTextColor="@color/third_party_item_right_color"
+                app:topLineVisible="visible" />
+
+            <android.support.v4.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_between_dimen" />
+            <!-- 视频栏-->
+            <com.bluewhaledt.saylove.ui.info.widget.PhotoAndVideoLayout
+                android:id="@+id/video_widget_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:background="@color/white"
+                app:isShowUpload="true"
+                app:uploadType="video" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+    <include
+        android:id="@+id/overlay_layout"
+        layout="@layout/item_overlay_layout"
+        android:visibility="gone" />
+</RelativeLayout>
+
+
+
+
+

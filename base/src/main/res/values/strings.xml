@@ -1,0 +1,20 @@
+<resources>
+    <string name="cant_use_camera_without_sdcard">当前SD卡不能使用，无法通过相机拍照</string>
+
+    <string name="zhenai_lib_btn_back">返回</string>
+    <string name="zhenai_lib_btn_sure">确定</string>
+
+    <string name="waiting">请稍候&#8230;</string>
+
+    <!--消息页-->
+    <string name="tv_shield_tips">为了保障你的安全，已屏蔽不良用户</string>
+
+    <string name="pickerview_cancel">取消</string>
+    <string name="pickerview_submit">确定</string>
+    <string name="pickerview_year">年</string>
+    <string name="pickerview_month">月</string>
+    <string name="pickerview_day">日</string>
+    <string name="pickerview_hours">时</string>
+    <string name="pickerview_minutes">分</string>
+    <string name="pickerview_seconds">秒</string>
+</resources>

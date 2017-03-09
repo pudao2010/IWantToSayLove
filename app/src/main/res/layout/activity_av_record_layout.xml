@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical">
+
+    <ViewStub
+        android:id="@+id/filter_surface_view_stub"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout="@layout/item_filter_surface_layout" />
+
+    <ViewStub
+        android:id="@+id/system_surface_view_stub"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout="@layout/item_surface_layout" />
+
+
+    <com.bluewhaledt.saylove.widget.horizontal_wheelview.WheelHorizontalView
+        android:id="@+id/horizontal_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        app:isCyclic="true"
+        app:visibleItems="5" />
+
+    <SurfaceView
+        android:id="@+id/play_surface_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+
+    <ImageView
+        android:id="@+id/close_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:paddingLeft="20dp"
+        android:src="@drawable/icon_video_close_selector" />
+
+    <LinearLayout
+        android:id="@+id/mask_layout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/horizontal_view"
+        android:layout_marginTop="70dp"
+        android:background="#000000"
+        android:visibility="gone"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:background="#e8c77a" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:src="@mipmap/img_video_saylove" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:background="#e8c77a" />
+    </LinearLayout>
+
+
+    <com.bluewhaledt.saylove.ui.video.widget.VideoRecordView
+        android:id="@+id/video_record_btn"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20.5dp" />
+
+
+    <TextView
+        android:id="@+id/mask_operation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="26dp"
+        android:layout_marginLeft="45dp"
+        android:textSize="12sp"
+        android:layout_toRightOf="@+id/video_record_btn"
+        android:drawableTop="@drawable/icon_video_mask_close_selector"
+        android:text="@string/open_mask"
+        android:textColor="@color/white" />
+
+
+    <com.bluewhaledt.saylove.ui.video.widget.VideoTopicLayout
+        android:id="@+id/video_question_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/video_record_btn"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="23dp"
+        android:background="#cc000000"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/guide_view"
+        android:layout_width="62dp"
+        android:layout_height="62dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/video_guide_drawable" />
+
+
+</RelativeLayout>

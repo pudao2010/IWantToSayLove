@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/picture_dimen"
+    android:layout_height="@dimen/picture_dimen"
+    android:layout_marginRight="10dp"
+    >
+
+    <ImageView
+        android:id="@+id/avatar_image_view"
+        android:layout_width="match_parent"
+        android:scaleType="centerCrop"
+        android:layout_height="match_parent" />
+
+
+
+    <LinearLayout
+        android:id="@+id/mask_layout"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"
+        android:background="#000000"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        >
+
+        <View
+            android:layout_width="0dp"
+            android:layout_marginRight="5dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:background="#e8c77a" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="8dp"
+            android:src="@mipmap/img_video_saylove" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_marginLeft="5dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:background="#e8c77a" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/play_icon_view"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerInParent="true"
+        android:src="@mipmap/icon_play"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>

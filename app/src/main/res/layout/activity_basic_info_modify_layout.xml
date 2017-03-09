@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f7f8fb"
+    android:scrollbars="none">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <com.bluewhaledt.saylove.ui.info.widget.ItemLayout
+            android:id="@+id/nick_name_item_layout"
+            style="@style/ModifyEnableStyle"
+            app:leftText="@string/nickname"
+            />
+
+        <com.bluewhaledt.saylove.ui.info.widget.ItemLayout
+            android:id="@+id/id_item_layout"
+            style="@style/ModifyDisableStyle"
+            app:leftText="@string/id"
+            />
+        <com.bluewhaledt.saylove.ui.info.widget.ItemLayout
+            android:id="@+id/sex_item_layout"
+            style="@style/ModifyDisableStyle"
+            app:leftText="@string/sex"/>
+
+        <com.bluewhaledt.saylove.ui.info.widget.ItemLayout
+            android:id="@+id/born_day_item_layout"
+            style="@style/ModifyDisableStyle"
+            app:leftText="@string/born_day"
+           />
+
+        <com.bluewhaledt.saylove.ui.info.widget.ItemLayout
+            android:id="@+id/marry_status_item_layout"
+            style="@style/ModifyDisableStyle"
+            app:leftText="@string/marital_status"
+            />
+
+        <com.bluewhaledt.saylove.ui.info.widget.ItemLayout
+            android:id="@+id/height_item_layout"
+            style="@style/ModifyEnableStyle"
+            app:leftText="@string/height"
+            app:rightText="@string/select_nothing" />
+
+        <com.bluewhaledt.saylove.ui.info.widget.ItemLayout
+            android:id="@+id/income_item_layout"
+            style="@style/ModifyEnableStyle"
+            app:leftText="@string/income"
+            app:rightText="@string/select_nothing" />
+
+        <com.bluewhaledt.saylove.ui.info.widget.ItemLayout
+            android:id="@+id/work_city_item_layout"
+            style="@style/ModifyEnableStyle"
+            app:leftText="@string/work_city"
+            app:rightText="@string/select_nothing" />
+
+        <com.bluewhaledt.saylove.ui.info.widget.ItemLayout
+            android:id="@+id/native_place_item_layout"
+            style="@style/ModifyEnableStyle"
+            app:leftText="@string/native_place"
+            app:rightText="@string/select_nothing" />
+
+        <com.bluewhaledt.saylove.ui.info.widget.ItemLayout
+            android:id="@+id/profession_item_layout"
+            style="@style/ModifyEnableStyle"
+            app:leftText="@string/job"
+            app:rightText="@string/select_nothing" />
+
+
+
+        <com.bluewhaledt.saylove.ui.info.widget.ItemLayout
+            android:id="@+id/child_item_layout"
+            style="@style/ModifyEnableStyle"
+            app:leftText="@string/children"
+            app:rightText="@string/select_nothing"/>
+
+        <com.bluewhaledt.saylove.ui.info.widget.ItemLayout
+            android:id="@+id/drinking_item_layout"
+            style="@style/ModifyEnableStyle"
+            app:leftText="@string/drinking"
+            app:rightText="@string/select_nothing" />
+
+        <com.bluewhaledt.saylove.ui.info.widget.ItemLayout
+            android:id="@+id/smoking_item_layout"
+            style="@style/ModifyEnableStyle"
+            app:leftText="@string/smoking"
+            app:rightText="@string/select_nothing" />
+
+
+    </LinearLayout>
+</ScrollView>

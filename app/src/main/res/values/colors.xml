@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="black">#ff000000</color>
+    <color name="transparent">#00000000</color>
+
+
+    <color name="color_b2000000">#b2000000</color>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#3a3a3a</color>
+    <color name="colorAccentHighlight">#7b53d9</color>
+    <color name="colorAccentDisable">#998b5df5</color>
+    <color name="color_dedede">#dedede</color>
+
+    <!--title bar 颜色-->
+    <color name="bgColor_overlay">#cccccc</color>
+    <!--框架主体颜色-->
+    <color name="zhenai_library_container_bg">#00f7f8fb</color>
+
+    <!--消息页-->
+    <color name="fragment_msg_of_list_item_red_point">#dd5e5e</color>
+    <color name="zhenai_tab_container_title_text">#ff000000</color>
+    <color name="zhenai_tab_container_title">#ffffffff</color>
+    <color name="color_split_line_d9d9d9">#d9d9d9</color>
+
+    <color name="item_layout_text_color">#999999</color>
+    <color name="item_bottom_line_color">#dfdfdf</color>
+
+    <color name="third_party_item_left_color">#666666</color>
+    <color name="third_party_item_right_color">#bababa</color>
+
+    <!--注册登录-->
+    <color name="activity_background_color">#ffffff</color>
+    <color name="common_black_color">#3a3a3a</color>
+    <color name="register_base_color">#f0cf62</color>
+    <color name="basic_info_divider_color">#f0cf62</color>
+    <color name="color_saylove">#e8c77a</color>
+    <color name="register_protocol_light_color">#f0cf62</color>
+
+    <drawable name="img_default_bg">#DEDEDE</drawable>
+
+<!--   popu start-->
+    <color name="simpletooltip_background">#eae9e7</color>
+    <color name="simpletooltip_text">@android:color/primary_text_light</color>
+    <color name="simpletooltip_arrow">#ffffff</color>
+    <color name="color_gray">#cccccc</color>
+    <!--   popu end-->
+    
+    <!--支付页-->
+    <color name="activity_pay_effective_dates_text">#808080</color>
+    <color name="activity_pay_divider">#dfdfdf</color>
+    <color name="color_f0cf62">#fff0cf62</color>
+    <color name="activity_pay_purchase_btn_press">#cd000000</color>
+
+    <!--详情页-->
+    <color name="color_d46e22">#d46e22</color>
+
+    <!--心动页-->
+    <color name="fragment_heart_beat_list_divider">#1A222222</color>
+
+    <!--访客-->
+    <color name="fragment_visitor_empty_data_text">#b3b3b3</color>
+
+
+
+    <color name="record_bg">#3a3a3a</color>
+    <color name="record_edge_color">#e8c77a</color>
+
+
+    <color name="third_party_page_verify_item_text">#808080</color>
+    <color name="record_point_color">#9b7e3d</color>
+    <color name="Register_protocol_pressed_color">#f0ddb0</color>
+    <color name="bander_text_color">#c0a23d</color>
+</resources>

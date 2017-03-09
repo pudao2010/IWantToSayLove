@@ -1,0 +1,149 @@
+apply plugin: 'com.android.application'
+
+// 加载config.properties文件
+Properties configProp = new Properties()
+configProp.load(new FileInputStream(file("$rootDir/config.properties")))
+
+String build_number = System.properties['build_number']
+if (build_number == null || build_number.isEmpty()) {
+    build_number = 1
+}
+
+String server_address = System.properties['server_address']
+if (server_address == null || server_address.isEmpty()) {
+    server_address = configProp['server_address']
+}
+
+String publish_environment = 'formal'
+if (!'api.sayloveapp.com'.equals(server_address)) {
+    publish_environment = 'personal'
+}
+
+def version_code = Integer.valueOf(new Date().format("yyyyMMdd"))
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+    defaultConfig {
+        applicationId "com.bluewhaledt.saylove"
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+
+        versionCode version_code
+        versionName configProp['versionName']
+
+        vectorDrawables.useSupportLibrary = true
+        renderscriptSupportModeEnabled true
+
+//        ndk.abiFilters "armeabi", "armeabi-v7a", "x86"
+        resConfigs "zh-rCN"
+        multiDexEnabled true
+//        manifestPlaceholders = [
+//                GETUI_APP_ID    : "jylLRvsWte72HQJc8l4WP3",
+//                GETUI_APP_KEY   : "wBWV8VM9Qb94XfHQAsHkZ6",
+//                GETUI_APP_SECRET: "PWiktscON08ktYZLuSJXG8",
+//                PACKAGE_NAME    : applicationId
+//        ]
+        ndk {
+            abiFilters "armeabi", "armeabi-v7a", "mips", "x86"
+        }
+
+    }
+
+
+
+    sourceSets.main {
+        assets.srcDirs = ['assets']
+        jniLibs.srcDirs = ['libs']
+    }
+    signingConfigs {
+        release {
+            keyAlias configProp['keystore.keyAlias']
+            keyPassword configProp['keystore.keyPassword']
+//            storeFile file(configProp['keystore.storeFile'])
+            storePassword configProp['keystore.storePassword']
+            // 使用旧版签名，禁用V2版签名模式
+            v2SigningEnabled false
+        }
+    }
+    buildTypes {
+        debug {
+            versionNameSuffix '00'
+            signingConfig signingConfigs.release
+        }
+        release {
+            signingConfig signingConfigs.release
+            minifyEnabled true
+            shrinkResources true
+            zipAlignEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    dexOptions {
+        jumboMode true
+        javaMaxHeapSize '4g'
+    }
+//    lintOptions {
+//        abortOnError false
+//        disable 'MissingTranslation'
+//    }
+    /** 芝麻raw混淆处理*/
+    packagingOptions {
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'assets/raw/detection_type_eye_blink.mp3'
+        exclude 'assets/raw/detection_type_mouth_open.mp3'
+        exclude 'assets/raw/detection_type_pitch_down.mp3'
+        exclude 'assets/raw/detection_type_yaw.mp3'
+        exclude 'assets/raw/ding.mp3'
+        exclude 'assets/raw/next_step.mp3'
+        exclude 'assets/raw/very_good.mp3'
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    releaseCompile project(path: ':base', configuration: 'release')
+    debugCompile project(path: ':base', configuration: 'debug')
+    compile rootProject.ext.dependencies.neteaseIMBase
+    compile rootProject.ext.dependencies.neteaseIMChatRoom
+    compile files('libs/BaiduLBS_Android.jar')
+    compile 'com.android.support:multidex:1.0.1'
+    compile rootProject.ext.dependencies.takephoto
+    compile project(':ijkplayer-java')
+}
+
+/** Apk输出目录 */
+def getApkDir() {
+    return rootProject.getBuildDir().getPath() + File.separator + "outputs" + File.separator + "apk"
+}
+
+/** 重命名release包 */
+android.applicationVariants.all { variant ->
+    String ip
+    if (publish_environment.toString().equals("formal")) {
+        ip = publish_environment
+    } else {
+        int start = server_address.lastIndexOf(".") + 1
+        int end = server_address.lastIndexOf(":")
+        if (end >= 0) {
+            ip = server_address.substring(start, end)
+        } else {
+            ip = server_address.substring(start)
+        }
+    }
+
+    variant.outputs.each { output ->
+        if (variant.buildType.name.equals("release")) {
+            def releaseApkName = "zhenai_${variant.versionName}_(${ip})_${build_number}.apk"
+            output.outputFile = new File("/${getApkDir()}/${releaseApkName}")
+        }
+
+        // 删除unaligned文件
+        if (output.zipAlign != null) {
+            output.zipAlign.doLast {
+                output.zipAlign.inputFile.delete()
+            }
+        }
+    }
+}
